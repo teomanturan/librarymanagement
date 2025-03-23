@@ -6,18 +6,27 @@ import ListUser from "./Pages/ListUser";
 import FormUser from "./Pages/FormUser";
 import { Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./Components/ProtectedRoute";
+import Search from "./Pages/Search";
 
 function App() {
   return (
     <div>
       <Routes>
         <Route path="/login" element={<Login />} />
-
+        <Route path="/" element={<Login />} />
         <Route
           path="/dashboard"
           element={
             <ProtectedRoute>
               <Dashboard />
+            </ProtectedRoute>
+          }
+        />
+        <Route
+          path="/search"
+          element={
+            <ProtectedRoute>
+              <Search />
             </ProtectedRoute>
           }
         />

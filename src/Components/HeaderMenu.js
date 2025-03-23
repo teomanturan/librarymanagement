@@ -9,9 +9,6 @@ function HeaderMenu() {
         {/* DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover */}
         <div className="hor-menu">
           <ul className="nav navbar-nav">
-            <li>
-              <a href="index.html">Dashboard</a>
-            </li>
             <li className="menu-dropdown classic-menu-dropdown">
               <a
                 data-hover="megamenu-dropdown"
@@ -61,6 +58,35 @@ function HeaderMenu() {
                       <a href="/list-user"> Kullanıcı Listesi </a>
                     </li>
                   </ul>
+                </li>
+              </ul>
+            </li>
+            <li className="menu-dropdown classic-menu-dropdown">
+              <a
+                data-hover="megamenu-dropdown"
+                data-close-others="true"
+                data-toggle="dropdown"
+                href="javascript:;"
+              >
+                Search <i className="fa fa-angle-down" />
+              </a>
+              <ul className="dropdown-menu pull-left">
+                <li className=" ">
+                  <a href="/form-user"> Yeni Kullanıcı </a>
+                </li>
+              </ul>
+              <ul className="dropdown-menu pull-left">
+                <li className=" ">
+                  <a href="/search">
+                    <i className="icon-briefcase" />
+                    Book
+                  </a>
+                </li>
+                <li className=" ">
+                  <a href="/search">
+                    <i className="icon-briefcase" />
+                    Author
+                  </a>
                 </li>
               </ul>
             </li>
