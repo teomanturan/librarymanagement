@@ -19,20 +19,20 @@ function HeaderMenu() {
                 data-toggle="dropdown"
                 href="javascript:;"
               >
-                Müşteri Yönetimi <i className="fa fa-angle-down" />
+                Kitap Yönetimi <i className="fa fa-angle-down" />
               </a>
               <ul className="dropdown-menu pull-left">
                 <li className="dropdown-submenu">
                   <a href=":;">
                     <i className="icon-briefcase" />
-                    Müşteri
+                    Kitap
                   </a>
                   <ul className="dropdown-menu">
                     <li className=" ">
-                      <a href="/customer-form"> Müşteri Yeni Kayıt </a>
+                      <a href="/form-book"> Kitap Yeni Kayıt </a>
                     </li>
                     <li className=" ">
-                      <a href="/customer-list"> Müşteri Listesi </a>
+                      <a href="/list-book"> Kitap Listesi </a>
                     </li>
                   </ul>
                 </li>
@@ -45,7 +45,7 @@ function HeaderMenu() {
                 data-toggle="dropdown"
                 href="javascript:;"
               >
-                Ürün Yönetimi <i className="fa fa-angle-down" />
+                Kullanıcı Yönetimi <i className="fa fa-angle-down" />
               </a>
               <ul className="dropdown-menu pull-left">
                 <li className="dropdown-submenu">
@@ -55,50 +55,10 @@ function HeaderMenu() {
                   </a>
                   <ul className="dropdown-menu">
                     <li className=" ">
-                      <a href="/product-form"> Yeni Ürün </a>
+                      <a href="/form-user"> Yeni Kullanıcı </a>
                     </li>
                     <li className=" ">
-                      <a href="/product-list"> Ürün Listesi </a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li className="menu-dropdown classic-menu-dropdown">
-              <a
-                data-hover="megamenu-dropdown"
-                data-close-others="true"
-                data-toggle="dropdown"
-                href="javascript:;"
-              >
-                Sipariş Yönetimi <i className="fa fa-angle-down" />
-              </a>
-              <ul className="dropdown-menu pull-left">
-                <li className="dropdown-submenu">
-                  <a href=":;">
-                    <i className="icon-briefcase" />
-                    Sipariş
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className=" ">
-                      <a href="/order-form"> Yeni Sipariş </a>
-                    </li>
-                    <li className=" ">
-                      <a href="/order-list"> Sipariş Listesi </a>
-                    </li>
-                  </ul>
-                </li>
-                <li className="dropdown-submenu">
-                  <a href=":;">
-                    <i className="icon-briefcase" />
-                    Kargo
-                  </a>
-                  <ul className="dropdown-menu">
-                    <li className=" ">
-                      <a href="/cargo-form"> Yeni Kargo </a>
-                    </li>
-                    <li className=" ">
-                      <a href="/"> Kargo Listesi </a>
+                      <a href="/list-user"> Kullanıcı Listesi </a>
                     </li>
                   </ul>
                 </li>

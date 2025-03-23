@@ -3,9 +3,14 @@ import { useNavigate } from "react-router-dom";
 function Dashboard() {
   const navigate = useNavigate();
 
+  const user = JSON.parse(localStorage.getItem("loggedInUser"));
+  if (!user) {
+    navigate("/login");
+  }
+  
   const handleLogout = () => {
-    localStorage.removeItem("isAuthenticated");
-    navigate("/");
+    localStorage.removeItem("loggedInUser");
+    navigate("/login");
   };
 
   return (
@@ -508,10 +513,12 @@ function Dashboard() {
                       </a>
                     </li>
                     <li>
-                      <a href="login.html">
-                        {" "}
-                        <i className="icon-key" /> Log Out{" "}
-                      </a>
+                      <button
+                        onClick={handleLogout}
+                        className="bg-red-500 text-white p-2"
+                      >
+                        Logout
+                      </button>
                     </li>
                   </ul>
                 </li>

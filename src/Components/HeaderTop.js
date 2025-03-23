@@ -6,6 +6,11 @@ function HeaderTop() {
   const [username, setUsername] = useState("");
   const navigate = useNavigate();
 
+  const handleLogout = () => {
+    localStorage.removeItem("loggedInUser");
+    sessionStorage.removeItem("username");
+    navigate("/login");
+  };
   useEffect(() => {
     const storedUsername =
       localStorage.getItem("username") || sessionStorage.getItem("username");
@@ -13,11 +18,6 @@ function HeaderTop() {
       setUsername(storedUsername);
     }
   }, []);
-  const handleLogout = () => {
-    localStorage.removeItem("username");
-    sessionStorage.removeItem("username");
-    navigate("/login123");
-  };
 
   return (
     <div className="page-header-top">
